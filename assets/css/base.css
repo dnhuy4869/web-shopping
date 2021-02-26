@@ -2,6 +2,8 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --primary-color: #da4427;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -14,6 +16,10 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Roboto', sans-serif;
+}
+
+.margin-right-8 {
+    margin-right: 8px !important;
 }
 
 .grid {
@@ -29,4 +35,54 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.btn {
+    min-width: 142px;
+    height: 36px;
+    border: none;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    outline: none;
+    cursor: pointer;
+    color: #333;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn--size-s {
+    height: 32px;
+    font-size: 1.2rem;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.btn.btn--primary {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn.btn--disable {
+    cursor: pointer;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
+.text-primary-color {
+    color: var(--primary-color) !important;
+}
+
+/* animation */
+@keyframes fade_in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
