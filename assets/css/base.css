@@ -4,6 +4,9 @@
     --text-color: #333;
     --primary-color: #da4427;
     --border-color: #dbdbdb;
+    --header-height: 120px;
+    --navbar-height: 27px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 * {
@@ -84,5 +87,14 @@ html {
     }
     to {
         opacity: 1;
+    }
+}
+
+@keyframes growth {
+    from {
+        transform: scale(var(--growth-from));
+    }
+    to {
+        transform: scale(var(--growth-to));
     }
 }
