@@ -628,7 +628,7 @@
 
 /* app container */
 .app__container {
-    width: 100%;
+    width: auto;
     padding: 150px 153px;
     background-color: #f5f5f5;
     z-index: 1;
@@ -903,6 +903,51 @@
     font-weight: 600;
     top: 0px;
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.pagination-item {
+    margin: 0 12px;
+}
+
+.pagination-item--active a {
+    background-color: #ee4d2d;
+    color: white;
+}
+
+.pagination-item--active:hover a {
+    background-color: #f35d3f;
+    color: white;
+}
+
+.pagination-item__link {
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #939393;
+    min-width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.pagination-item__icon {
+
+}
+
+/* footer */
+.footer {
+    position: absolute;
+    top: 1056px;
+}
+
 
 
 

@@ -153,6 +153,11 @@ html {
     color: var(--primary-color) !important;
 }
 
+.home-product__pagination {
+    margin-top: 48px;
+    margin-bottom: 32px;
+}
+
 /* animation */
 @keyframes fade_in {
     from {
